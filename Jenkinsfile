@@ -2,7 +2,7 @@ pipeline {
     agent {label '64'}
     stages {
         stage ('Source'){
-            step {
+            steps{
                 git 'https://github.com/mystop1/declarative.git'
             }
         }
